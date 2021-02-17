@@ -1,0 +1,72 @@
+#sidebar-wrapper {
+  min-height: 110vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.75rem 0.75rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  background-color: white;
+  min-width: 100vw;
+  position: relative;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.remove {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+    width: 242px;
+    float: left;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    display: none;
+  }
+}
+.navbar {
+  margin-bottom: 2em;
+}
+
+.components-panel {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.viewport-size-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.viewport-size-wrapper p {
+  font-size: 11px;
+  font-family: "Courier New";
+}

@@ -1,0 +1,135 @@
+snt-connect-offers {
+  align-self: stretch;
+  min-height: 100%;
+}
+snt-connect-offers .connect-offers-panel {
+  width: 100%;
+  box-sizing: border-box;
+  color: #323232;
+  background-color: #ffffff;
+  border: 3px solid #e5e5e5;
+  padding: 40px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+snt-connect-offers .connect-offers-panel button-link-group {
+  margin-top: auto;
+}
+snt-connect-offers .offer-available {
+  border: 3px solid #acdde4;
+}
+snt-connect-offers .offer-available .offer-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: "Averta-ExtraBold", sans-serif !important;
+  font-weight: 500 !important;
+  background-color: #acdde4;
+}
+snt-connect-offers .logo {
+  margin-bottom: 40px;
+}
+snt-connect-offers h3 {
+  margin-bottom: 30px;
+}
+snt-connect-offers h3,
+snt-connect-offers p {
+  text-align: center;
+}
+snt-connect-offers snt-modal .offer-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  height: 21px;
+}
+snt-connect-offers snt-modal .offer-code .offer-code-wrapper {
+  padding: 0 24px 0 15px;
+  background: white;
+}
+snt-connect-offers snt-modal span.iconCopy {
+  position: absolute;
+  top: 1px;
+  right: -18px;
+}
+snt-connect-offers snt-modal snt-link a {
+  position: relative;
+  font-family: "Averta-ExtraBold", Arial, Helvetica, sans-serif;
+  top: 10px;
+  margin-right: 5px;
+  font-size: 14px;
+  outline: 1px solid transparent;
+  padding: 1px;
+  box-sizing: border-box;
+  background-image: none;
+}
+snt-connect-offers snt-modal snt-link a:before {
+  bottom: 3px;
+}
+snt-connect-offers snt-modal snt-link a:hover {
+  background-image: none;
+}
+snt-connect-offers snt-modal snt-link a:focus {
+  background-image: none;
+  margin: 0px;
+  margin-right: 5px;
+  outline-color: #9e0a9a;
+}
+snt-connect-offers snt-modal button-link-group button-link {
+  width: auto;
+}
+snt-connect-offers snt-modal .couponCode {
+  position: absolute;
+  left: -9999px;
+}
+snt-connect-offers snt-modal .code_copied {
+  font-family: "Averta-ExtraBold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 21px;
+}
+snt-connect-offers snt-accordion.transcript-accordion {
+  margin-top: 26px;
+}
+snt-connect-offers snt-accordion.transcript-accordion .legal-open {
+  display: none;
+}
+snt-connect-offers snt-accordion.transcript-accordion .legal-close {
+  display: block;
+}
+snt-connect-offers snt-accordion.transcript-accordion[expanded] .legal-open {
+  display: block;
+}
+snt-connect-offers snt-accordion.transcript-accordion[expanded] .legal-close {
+  display: none;
+}
+snt-connect-offers snt-accordion.transcript-accordion .expand-icon {
+  font-size: 14px;
+}
+snt-connect-offers snt-accordion.transcript-accordion .card-header [slot=summary] {
+  font-size: 12px;
+}
+snt-connect-offers snt-accordion.transcript-accordion .card-body {
+  max-height: 250px;
+}
+@media (min-width: 1024px) {
+  snt-connect-offers snt-accordion.transcript-accordion .card-body {
+    max-height: 350px;
+  }
+}
+snt-connect-offers snt-accordion.transcript-accordion .card-body [slot=details] p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 12px;
+}

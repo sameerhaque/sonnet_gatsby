@@ -1,0 +1,1 @@
+import{r as o,h as t}from"./p-75b8bc7c.js";const e=class{constructor(t){o(this,t)}render(){return t("div",null,t("snt-hero",{class:"error-fill"},t("div",{slot:"content"},t("h1",null,"Oops! Looks like something went wrong..."),t("p",null,"Let's get you back to finding the right coverage."))))}};export{e as page_not_found_example}

@@ -1,0 +1,1 @@
+import{r as t,h as e}from"./p-75b8bc7c.js";const r=class{constructor(e){t(this,e)}render(){return e("div",null,e("snt-cta-highlight",{cta:"Get a Quote","action-reference":"Action.logAction"},"Best offer ever")," ",e("snt-cta-highlight",{cta:"Get a Quote","url-target":"_blank",url:"https://www.sonnet.ca"},"Best offer ever"))}};export{r as cta_highlight_example}

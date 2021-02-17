@@ -1,0 +1,9 @@
+snt-pane {
+  width: 100%;
+  display: block;
+}
+snt-pane[animated] {
+  height: auto;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}

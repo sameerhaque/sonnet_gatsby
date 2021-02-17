@@ -1,0 +1,1 @@
+import{r as s,h as t,g as r,H as n}from"./p-75b8bc7c.js";const e=class{constructor(t){s(this,t)}render(){return t(n,{class:"icon-font "+this.styleClasses,"aria-hidden":"true"})}get element(){return r(this)}};e.TAG_NAME="snt-icon",e.style="";export{e as snt_icon}

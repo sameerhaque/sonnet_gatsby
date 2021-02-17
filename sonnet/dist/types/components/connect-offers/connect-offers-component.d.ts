@@ -1,0 +1,31 @@
+export declare class ConnectOffersComponent {
+    element: HTMLElement;
+    offerAvailable?: string;
+    logoSources?: string;
+    altTag?: string;
+    offerTitle?: string;
+    titleString?: string;
+    href?: string;
+    target?: string;
+    description?: string;
+    buttonLabel?: string;
+    ariaLabel?: string;
+    actionReference?: string;
+    actionData?: string;
+    modalData: string;
+    modalDataObj: object;
+    private logoSourceJson;
+    private logoIsSet;
+    private modalLegalLinkShow;
+    private modalLegalLinkHide;
+    static readonly TAG_NAME: string;
+    componentWillLoad(): void;
+    componentDidLoad(): void;
+    parseModalData(newValue: string): void;
+    toggleLegal(): void;
+    showModal(): void;
+    copyToClipboard(e: any): void;
+    render(): any;
+    buildButtonContent(): any;
+    buildModalContent(data: any): any;
+}

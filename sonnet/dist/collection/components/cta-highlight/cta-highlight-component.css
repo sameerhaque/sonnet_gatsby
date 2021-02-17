@@ -1,0 +1,76 @@
+snt-cta-highlight.left .text-content, snt-cta-highlight left.text-content, .left snt-cta-highlight .text-content {
+  text-align: left;
+}
+@media (max-width: 767px) {
+  snt-cta-highlight snt-layout.left-mobile .text-content, snt-cta-highlight snt-layout .left-mobile.text-content, .left-mobile snt-cta-highlight snt-layout .text-content {
+    text-align: left;
+  }
+}
+snt-cta-highlight.center .text-content, snt-cta-highlight center.text-content, .center snt-cta-highlight .text-content {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  snt-cta-highlight snt-layout.center-mobile .text-content, snt-cta-highlight snt-layout .center-mobile.text-content, .center-mobile snt-cta-highlight snt-layout .text-content {
+    text-align: center;
+  }
+}
+snt-cta-highlight.right .text-content, snt-cta-highlight right.text-content, .right snt-cta-highlight .text-content {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  snt-cta-highlight snt-layout.right-mobile .text-content, snt-cta-highlight snt-layout .right-mobile.text-content, .right-mobile snt-cta-highlight snt-layout .text-content {
+    text-align: right;
+  }
+}
+snt-cta-highlight .cta-container {
+  background: #6ebac5;
+}
+snt-cta-highlight .cta-container h4.text-content {
+  margin-right: 30px;
+  display: inline-block;
+}
+snt-cta-highlight button-link {
+  display: inline-block;
+}
+snt-cta-highlight button-link .icon-font::after {
+  color: white;
+}
+snt-cta-highlight .text-content {
+  font-size: 0.875rem;
+  line-height: 21px;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+  font-family: "Averta-ExtraBold", sans-serif !important;
+  font-weight: 500 !important;
+}
+snt-cta-highlight snt-layout[viewport] .spacings {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  snt-cta-highlight .cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  snt-cta-highlight snt-button, snt-cta-highlight button-link {
+    white-space: nowrap;
+  }
+  snt-cta-highlight .text-content {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    width: inherit;
+  }
+}
+@media (min-width: 1024px) {
+  snt-cta-highlight .text-content {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  snt-cta-highlight .text-content {
+    font-size: 1.313rem;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,8 @@
+snt-search-typeahead {
+  position: relative;
+  width: 100%;
+  max-width: 47rem;
+}
+snt-search-typeahead snt-search-combox .search-input-area {
+  border-color: #e5e5e5;
+}

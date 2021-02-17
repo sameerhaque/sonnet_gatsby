@@ -1,0 +1,42 @@
+link-example table {
+  width: 100%;
+}
+link-example th {
+  padding: 5px;
+  width: 25%;
+  border: 1px solid black;
+}
+link-example td {
+  width: 25%;
+  text-align: left;
+  border: 1px solid black;
+}
+link-example td p {
+  padding: 5px;
+}
+.light-fill link-example td p, link-example td p.light-fill {
+  display: block;
+  background-color: #d9f0f4;
+  color: #323232;
+}
+.neutral-fill link-example td p, link-example td p.neutral-fill {
+  display: block;
+  background-color: #f8f8f8;
+  color: #323232;
+}
+.dark-fill link-example td p, link-example td p.dark-fill {
+  display: block;
+  background-color: #147582;
+  color: #ffffff;
+}
+.white-fill link-example td p, link-example td p.white-fill {
+  display: block;
+  background-color: #ffffff;
+  color: #323232;
+}
+.error-fill link-example td p, link-example td p.error-fill {
+  display: block;
+  background-color: #d9f0f4;
+  background-image: none;
+  color: #323232;
+}

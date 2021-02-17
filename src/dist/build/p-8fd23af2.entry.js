@@ -1,0 +1,1 @@
+import{r as s,e as t,h as e,H as r,g as n}from"./p-75b8bc7c.js";const a=class{constructor(e){s(this,e),this.toggle=t(this,"toggle",7)}handleClick(){this.toggle.emit()}render(){return e(r,{onClick:this.handleClick.bind(this)},"X",e("span",{class:"sr-only"},"Search"))}get element(){return n(this)}};a.TAG_NAME="snt-header",a.style="";export{a as snt_toggle}

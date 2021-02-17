@@ -1,0 +1,10 @@
+snt-login a {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  background-image: none;
+}
+snt-login a:focus, snt-login a:hover {
+  background-image: none;
+}

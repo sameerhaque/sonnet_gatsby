@@ -1,0 +1,79 @@
+snt-navbar-collapse {
+  width: 290px;
+}
+snt-navbar-collapse hr {
+  border-top: 1px solid #ffffff;
+  margin: 0;
+}
+snt-navbar-collapse snt-nav {
+  padding: 0.825rem 0 0.5rem;
+  border-bottom: 1px solid #ffffff;
+}
+@media (min-width: 1024px) {
+  snt-navbar-collapse snt-nav {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+snt-navbar-collapse snt-nav:last-of-type {
+  border-bottom: none;
+}
+snt-navbar-collapse snt-nav-item {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  snt-navbar-collapse snt-nav-item {
+    width: auto;
+  }
+}
+snt-navbar-collapse .header {
+  padding: 20px 30px 20px 30px;
+}
+@media (min-width: 1024px) {
+  snt-navbar-collapse .header {
+    padding: initial;
+  }
+}
+snt-navbar-collapse .header snt-icon {
+  font-size: 1rem;
+  margin-right: 24px;
+}
+snt-navbar-collapse .header snt-image {
+  width: 100%;
+  max-width: 85px;
+}
+snt-navbar-collapse .body {
+  position: relative;
+  padding: 0.75rem 2rem 2rem;
+}
+@media (min-width: 1024px) {
+  snt-navbar-collapse .body {
+    padding: 0;
+  }
+}
+snt-navbar-collapse .body snt-button.cta button {
+  width: 100%;
+}
+snt-navbar-collapse .spacer {
+  display: none;
+}
+@media (min-width: 1024px) {
+  snt-navbar-collapse .spacer {
+    display: flex;
+    flex: 0 1 4.375rem;
+    min-width: 1rem;
+  }
+}
+snt-navbar-collapse[shown] {
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #323232;
+}
+@media (min-width: 1024px) {
+  snt-navbar-collapse[shown] {
+    position: initial;
+  }
+}

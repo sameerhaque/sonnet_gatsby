@@ -1,0 +1,29 @@
+snt-breadcrumb {
+  display: none;
+}
+@media (min-width: 1024px) {
+  snt-breadcrumb {
+    display: block;
+  }
+}
+snt-breadcrumb ul {
+  display: flex;
+  flex-direction: row;
+}
+snt-breadcrumb ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 5px;
+}
+snt-breadcrumb ul li a {
+  margin-right: 5px;
+  color: #323232;
+  text-decoration: none;
+}
+snt-breadcrumb ul li a:hover {
+  color: #147582;
+}
+snt-breadcrumb .iconChevron {
+  font-size: 10px;
+}

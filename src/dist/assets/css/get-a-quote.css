@@ -1,0 +1,13 @@
+snt-modal#gaq-modal .modal-body snt-multi-column-mixed {
+    padding-top: 0px;
+}
+
+snt-modal#gaq-modal .column { 
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+    snt-modal#gaq-modal snt-layout[viewport=medium] .modal-content { 
+        padding: 40px 26px;
+    }
+}

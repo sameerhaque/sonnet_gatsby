@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>nav/iconNavHouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22.3258785,0 L17.9216853,3.893 L5.07356242,3.893 L5.07356242,16.36 L5.08175246,16.36 L5.08175246,45 L15.2363764,45 L29.7276257,45 L39.8791784,45 L39.881226,45 L39.881226,15.237 L22.3258785,0 Z M7.88069811,16.442 L22.3412348,3.658 L37.079209,16.449 L37.079209,42.281 L29.7276257,42.281 L29.7276257,26.646 L15.2363764,26.646 L15.2363764,42.281 L7.88069811,42.281 L7.88069811,16.442 Z M7.4732437,6.223 L15.2865404,6.223 L7.4732437,13.128 L7.4732437,6.223 Z M18.0363458,42.281 L26.9256088,42.281 L26.9256088,29.363 L18.0363458,29.363 L18.0363458,42.281 Z" id="path-1"></path>
+    </defs>
+    <g id="nav/iconNavHouse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#313131" xlink:href="#path-1"></use>
+    </g>
+</svg>

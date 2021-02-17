@@ -1,0 +1,34 @@
+import { EventEmitter } from "../../../stencil-public-runtime";
+import { NavItemTypeEnum } from "../../../core/nav/domain/NavItemTypeEnum";
+export declare class NavItemComponent {
+    static readonly TAG_NAME = "snt-nav-item";
+    element: HTMLSntNavItemElement;
+    href: string;
+    target: string;
+    linkTitle: string;
+    iconClassName: string;
+    expanded: boolean;
+    current: boolean;
+    styleClasses: string;
+    isExternal: boolean;
+    navItemEvent: EventEmitter;
+    private parent;
+    private collapseTimeout;
+    private type;
+    expand(): Promise<void>;
+    collapse(): Promise<void>;
+    toggleExpanded(): Promise<void>;
+    setCurrent(): Promise<void>;
+    unsetCurrent(): Promise<void>;
+    toggleCurrent(): Promise<void>;
+    watchCurrent(): void;
+    watchExpanded(): void;
+    registerParent(parent: HTMLSntNavItemElement): Promise<void>;
+    handleMouseOver(_e: any): void;
+    handleMouseleave(): void;
+    componentWillLoad(): void;
+    componentDidLoad(): void;
+    isType(type: NavItemTypeEnum): Promise<boolean>;
+    private registerChildren;
+    render(): any;
+}

@@ -1,0 +1,12 @@
+snt-navbar-brand snt-image img {
+  display: flex;
+  max-width: 100%;
+  width: 5.325rem;
+  height: 1rem;
+}
+@media (min-width: 768px) {
+  snt-navbar-brand snt-image img {
+    width: 7.5rem;
+    height: 1.5rem;
+  }
+}

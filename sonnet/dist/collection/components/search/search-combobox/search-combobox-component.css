@@ -1,0 +1,183 @@
+snt-search-combobox {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  background-color: transparent;
+}
+snt-search-combobox input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.525rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+snt-search-combobox input::-webkit-search-cancel-button {
+  position: relative;
+  right: 11px;
+  filter: brightness(0.6) contrast(1.03) grayscale(1);
+}
+snt-search-combobox snt-button button {
+  display: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+snt-search-combobox snt-layout .spacings {
+  overflow: unset;
+}
+snt-search-combobox .search-container {
+  position: relative;
+}
+snt-search-combobox :focus {
+  outline: none;
+}
+snt-search-combobox snt-button {
+  display: none;
+}
+snt-search-combobox snt-icon {
+  margin: 0 0.625rem 0 1.25rem;
+}
+snt-search-combobox input {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+snt-search-combobox ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+snt-search-combobox ul li a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 14px;
+  line-height: 23px;
+}
+snt-search-combobox .search-input-area {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #b2b2b2;
+  border-radius: 25px;
+}
+snt-search-combobox .search-input-area:hover {
+  border-color: #147582;
+}
+snt-search-combobox .search-results-area {
+  z-index: 10;
+  display: none;
+  color: #323232;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0.625rem;
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: white;
+  height: 400px;
+  overflow-y: scroll;
+}
+@media (min-width: 768px) {
+  snt-search-combobox .search-results-area {
+    height: auto;
+    overflow-y: auto;
+  }
+}
+snt-search-combobox .search-results-area:before {
+  position: absolute;
+  content: " ";
+  height: 1px;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 2rem);
+  background-color: #147582;
+}
+snt-search-combobox .result {
+  padding: 0.3125rem 0.625rem;
+  font-size: 14px;
+  line-height: 23px;
+  border-bottom: 1px solid #e5e5e5;
+}
+snt-search-combobox .result:last-child {
+  border-bottom: none;
+}
+snt-search-combobox.search-combobox-has-focus snt-backdrop {
+  display: block;
+  background-color: rgba(51, 51, 51, 0.75);
+  z-index: 5;
+}
+snt-search-combobox.search-combobox-has-focus .search-input-area {
+  border: 3px solid #147582;
+  margin: -2px;
+}
+snt-search-combobox .result {
+  cursor: default;
+}
+snt-search-combobox .result:hover, snt-search-combobox .result.result-is-focused {
+  background-color: #f8f8f8;
+}
+snt-search-combobox .result b {
+  pointer-events: none;
+}
+snt-search-combobox .result:active {
+  background-color: #147582;
+}
+snt-search-combobox .result:active a {
+  color: white;
+}
+snt-search-combobox.theme-default .search-input-area {
+  background-color: #ffffff;
+  border: 1px solid #b2b2b2;
+}
+snt-search-combobox.theme-default .search-input-area:hover {
+  border-color: #147582;
+}
+snt-search-combobox.theme-default.search-combobox-has-focus .search-input-area {
+  border: 3px solid #147582;
+}
+snt-search-combobox.theme-neutral .search-input-area {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+snt-search-combobox.theme-neutral .search-input-area:hover {
+  border-color: #6ebac5;
+}
+snt-search-combobox.theme-neutral.search-combobox-has-focus .search-input-area {
+  border: 3px solid #6ebac5;
+}
+snt-search-combobox.search-combobox-is-expanded.theme-neutral .search-input-area, snt-search-combobox.search-combobox-is-expanded.theme-default .search-input-area {
+  border: 1px solid transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+  pointer-events: all;
+  z-index: 10;
+  position: relative;
+  margin: 0px;
+}
+snt-search-combobox.search-combobox-is-expanded.theme-neutral .search-results-area, snt-search-combobox.search-combobox-is-expanded.theme-default .search-results-area {
+  display: block;
+}
+
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+  input[type=search] {
+    font-size: 14px;
+  }
+}

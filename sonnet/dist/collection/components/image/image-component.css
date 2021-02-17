@@ -1,0 +1,34 @@
+snt-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+snt-image .hidden {
+  display: none;
+}
+snt-image .hiddenOnMobile {
+  display: none;
+}
+@media (min-width: 768px) {
+  snt-image .hiddenOnMobile {
+    display: block;
+  }
+}
+snt-image[data-width] img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  snt-image[data-width] img {
+    width: var(--blog-img-width, 100%);
+  }
+}
+snt-image .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+snt-image .left {
+  margin-right: auto;
+}
+snt-image .right {
+  margin-left: auto;
+}

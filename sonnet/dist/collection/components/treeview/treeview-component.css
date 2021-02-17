@@ -1,0 +1,131 @@
+snt-treeview {
+  display: block;
+}
+snt-treeview .category-label {
+  display: block;
+}
+snt-treeview .category-label .iconCaret {
+  padding-left: 3px;
+  font-size: 10px;
+}
+snt-treeview .category-label .iconCaret.expanded {
+  transform: rotate(-180deg);
+  padding-right: 3px;
+  padding-left: 0px;
+}
+snt-treeview .category-label-row {
+  display: inline-flex;
+  align-items: center;
+}
+snt-treeview .category-text {
+  display: inline-flex;
+  justify-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+snt-treeview .category-text:after {
+  content: attr(data-text);
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  font-weight: normal;
+  font-family: "Averta-Regular";
+}
+@media speech {
+  snt-treeview .category-text:after {
+    display: none;
+  }
+}
+snt-treeview ul {
+  list-style: none;
+  padding: 0;
+}
+snt-treeview li, snt-treeview a {
+  color: #323232;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  text-decoration: none;
+}
+snt-treeview li:focus, snt-treeview a:focus {
+  outline: none;
+}
+snt-treeview li:hover {
+  cursor: pointer;
+}
+snt-treeview li:hover > .category-label {
+  font-weight: 500;
+  font-family: "Averta-ExtraBold", sans-serif;
+  color: #147582;
+}
+snt-treeview li:hover .iconCaret {
+  font-weight: 700;
+}
+snt-treeview li {
+  margin-bottom: 1.25rem;
+}
+snt-treeview li:last-child {
+  margin-bottom: 0;
+}
+snt-treeview li.active > span {
+  border-bottom: 3px solid #147582;
+  color: #147582;
+}
+snt-treeview li > ul {
+  padding: 1rem 0 0.625rem 1.875rem;
+}
+snt-treeview li > ul li {
+  margin-bottom: 1rem;
+}
+snt-treeview li > ul li:last-child {
+  margin-bottom: 0;
+}
+snt-treeview li > a:hover {
+  font-weight: 500;
+  font-family: "Averta-ExtraBold", sans-serif;
+  color: #147582;
+  text-decoration: none;
+}
+snt-treeview li:focus.focused .category-label > span {
+  font-weight: 500;
+  font-family: "Averta-ExtraBold", sans-serif;
+  color: #147582;
+  outline: 1px solid #147582;
+  outline-offset: 3px;
+}
+snt-treeview li.selected .category-label > span {
+  border-bottom: 2px solid #147582;
+  padding-bottom: 2px;
+  margin-bottom: -4px;
+}
+snt-treeview li > span {
+  pointer-events: none;
+}
+snt-treeview li a:focus.focused > span {
+  font-weight: 500;
+  font-family: "Averta-ExtraBold", sans-serif;
+  color: #147582;
+  outline: 1px solid #147582;
+  outline-offset: 3px;
+}
+snt-treeview a {
+  display: block;
+}
+snt-treeview a.selected > span {
+  border-bottom: 2px solid #147582;
+  padding-bottom: 2px;
+  margin-bottom: -4px;
+}
+snt-treeview a.active {
+  border-bottom: 2px solid #147582;
+  color: #147582;
+}
+snt-treeview [role=treeitem][aria-expanded=false] > ul {
+  display: none;
+}
+@media (min-width: 1024px) {
+  snt-treeview .category-label .iconCaret {
+    font-size: 12px;
+  }
+}

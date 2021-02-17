@@ -1,0 +1,12 @@
+button-link-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+button-link-group button-link {
+  text-align: center;
+  width: 100%;
+}
+button-link-group button-link:nth-child(n+2) {
+  margin-top: 40px;
+}

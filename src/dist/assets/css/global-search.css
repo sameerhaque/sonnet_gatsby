@@ -1,0 +1,107 @@
+.search-results snt-pagination snt-layout[viewport] .pagination-container {
+    max-width: 100%;
+}
+
+.blog-category-treeview {
+    display: none;
+    box-sizing: border-box;
+    border-right: 1px solid #e5e5e5;
+}
+
+.search-results {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.blog-results {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.category-tree-title snt-title snt-layout .spacings {
+    display: none;
+}
+
+.search-results snt-search-result .description {
+    margin-bottom: 0px;
+}
+
+.search-combobox-section.results-section snt-search-combobox snt-layout .spacings {
+    padding-top: 40px !important;
+    padding-bottom: 0px !important;
+}
+
+@media (min-width: 1024px) {
+    .search-results {
+        margin-top: -5px;
+    }
+
+    .blog-results {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .blog-results.no-results {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .blog-results snt-pagination .spacings {
+        padding: 3.750em 4.438em;
+    }
+
+    .blog-category-treeview {
+        display: inline-block;
+        padding: 0px 0px 60px 71px;
+    }
+
+    .blog-category-treeview.no-results {
+        display: none;
+    }
+
+    .category-tree-title snt-title snt-layout .spacings {
+        display: inline-block;
+        padding: 0px 0px 35px 0px;
+    }
+
+    .category-tree-title snt-title h4 {
+        line-height: 0.8rem;
+    }
+
+    .search-combobox-section.results-section snt-search-combobox snt-layout .spacings {
+        padding-top: 60px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .blog-results snt-pagination .spacings {
+        padding: 3.750em 8.438em;
+    }
+
+    .blog-category-treeview {
+        padding: 0px 0px 60px 135px;
+    }
+
+    .blog-category-treeview.no-results {
+        display: none;
+    }
+
+    .category-tree-title snt-title snt-layout .spacings {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .category-tree-title snt-title h4 {
+        line-height: 0.95rem;
+    }
+}
+
+
+.snt-search-results-count {
+    margin-bottom: 26px;
+}
+@media (min-width: 768px) {
+    .snt-search-results-count {
+        margin-bottom: 30px;
+    }
+}

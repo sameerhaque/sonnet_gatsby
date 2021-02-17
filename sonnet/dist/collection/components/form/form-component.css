@@ -1,0 +1,64 @@
+snt-form * {
+  box-sizing: border-box;
+}
+snt-form .form-control {
+  border: 1px solid #6f6f6f;
+  border-radius: 0;
+  color: #323232;
+  line-height: 26px;
+}
+snt-form .form-control:hover {
+  box-shadow: none;
+  border: 1px solid #147582;
+}
+snt-form .form-control:focus {
+  box-shadow: none;
+  border: 3px solid #147582;
+}
+snt-form label {
+  font-family: "Averta-ExtraBold", sans-serif !important;
+  font-weight: 500 !important;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+snt-form .form-row {
+  margin-bottom: 26px;
+}
+snt-form p {
+  margin-bottom: 26px;
+}
+snt-form textarea {
+  min-height: 300px;
+}
+snt-form snt-button.submit-button button {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+snt-form .hidden {
+  display: none;
+}
+snt-form .error-message {
+  font-family: "Averta-Regular", sans-serif;
+  margin-top: 5px;
+  color: #e12160;
+  font-size: 12px;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  snt-form label {
+    font-size: 16px;
+  }
+  snt-form .form-row {
+    margin-bottom: 30px;
+  }
+  snt-form p {
+    margin-bottom: 30px;
+  }
+  snt-form .error-message {
+    font-size: 14px;
+  }
+  snt-form snt-button.submit-button button {
+    width: auto;
+  }
+}

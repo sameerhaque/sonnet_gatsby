@@ -1,0 +1,16 @@
+.blog-article .blog-image {
+    margin-bottom: 40px;
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .blog-article .blog-image {
+        margin-bottom: 60px;
+        display: block;
+    }
+}
+
+.blog-article .photo-credit {
+    font-size: 12px;
+    margin-top: 5px;
+}

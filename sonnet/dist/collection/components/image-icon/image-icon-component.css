@@ -1,0 +1,50 @@
+snt-image-icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto 0px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+  border: 3px solid #acdde4;
+  background-color: #acdde4;
+  border-radius: 150px;
+}
+.neutral-fill snt-image-icon .icon, snt-image-icon .icon.neutral-fill {
+  border: 3px solid #acdde4;
+  background-color: #acdde4;
+}
+.light-fill snt-image-icon .icon, snt-image-icon .icon.light-fill {
+  border: 3px solid #6ebac5;
+  background-color: #ffffff;
+}
+.float-fill snt-image-icon .icon, snt-image-icon .icon.float-fill {
+  border: 3px solid #acdde4;
+  background-color: #acdde4;
+}
+.primary-fill snt-image-icon .icon, snt-image-icon .icon.primary-fill {
+  border: 3px solid #acdde4;
+  background-color: #ffffff;
+}
+.light-stroke snt-image-icon .icon, snt-image-icon .icon.light-stroke {
+  border: 3px solid #acdde4;
+  background-color: #acdde4;
+}
+.dark-fill snt-image-icon .icon, snt-image-icon .icon.dark-fill {
+  border: 3px solid #ffffff;
+  background-color: #147582;
+}
+snt-image-icon .image-icon {
+  height: 30px;
+  width: 30px;
+}
+@media (min-width: 768px) {
+  snt-image-icon .icon {
+    height: 80px;
+    width: 80px;
+  }
+  snt-image-icon .image-icon {
+    height: 45px;
+    width: 45px;
+  }
+}

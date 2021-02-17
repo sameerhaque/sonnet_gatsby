@@ -1,0 +1,33 @@
+snt-search-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  transform: translateX(-100%);
+  transition: 0.3s ease-out;
+  background-color: #323232;
+  padding: 15px 30px 30px;
+}
+snt-search-panel:not(.active) {
+  visibility: hidden;
+}
+snt-search-panel[active] {
+  transform: translateX(0%);
+  visibility: visible;
+}
+@media (min-width: 1024px) {
+  snt-search-panel {
+    display: none;
+  }
+}
+snt-search-panel snt-search-typeahead {
+  margin-top: 1.25rem;
+}
+snt-search-panel snt-action-button snt-icon {
+  margin-right: 0.5rem;
+  transform: rotate(180deg);
+  display: inline-block;
+}

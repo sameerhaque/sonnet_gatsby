@@ -1,0 +1,163 @@
+snt-faq-filter-slider.float-fill, .float-fill snt-faq-filter-slider {
+  display: block;
+  background-color: #f8f8f8;
+  color: #323232;
+}
+snt-faq-filter-slider.float-fill .filter-container, .float-fill snt-faq-filter-slider .filter-container {
+  background-color: #ffffff;
+}
+snt-faq-filter-slider .wrapper {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0.2px 0.2px 10px #e5e5e5;
+  margin: 0 auto 20px;
+}
+snt-faq-filter-slider .right-gradient {
+  position: absolute;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  width: 21px;
+  height: 45px;
+  z-index: 1;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+snt-faq-filter-slider .left-gradient {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 21px;
+  height: 45px;
+  z-index: 1;
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  pointer-events: none;
+}
+snt-faq-filter-slider .filter-container {
+  position: relative;
+  width: 100%;
+  height: 53px;
+  line-height: 43px;
+  text-align: center;
+  overflow-x: scroll;
+  padding: 0px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: -10px;
+  scrollbar-color: transparent transparent;
+}
+snt-faq-filter-slider nav {
+  width: 100%;
+}
+snt-faq-filter-slider ul {
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  margin: 0px 7px 0px 7px;
+  padding: 0px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  height: 53px;
+  white-space: nowrap;
+}
+snt-faq-filter-slider li {
+  color: #323232;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21px;
+  overflow: hidden;
+  display: inline-flex;
+  justify-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px 13px;
+}
+snt-faq-filter-slider a {
+  color: #323232;
+  font-size: 16px;
+  font-family: "Averta-Regular", Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  line-height: 21px;
+  width: auto;
+  height: 21px;
+  text-decoration: none;
+}
+snt-faq-filter-slider a:focus {
+  display: inline;
+  outline-offset: 3px;
+  outline: 2px solid #147582;
+}
+snt-faq-filter-slider a:hover {
+  color: #147582;
+  text-decoration: none !important;
+  font-family: "Averta-ExtraBold", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+snt-faq-filter-slider .bold-hidden {
+  display: block;
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+snt-faq-filter-slider a.active,
+snt-faq-filter-slider a:focus {
+  position: relative;
+  color: #147582;
+  font-family: "Averta-Regular", Arial, Helvetica, sans-serif;
+}
+snt-faq-filter-slider a.active {
+  color: #323232;
+}
+snt-faq-filter-slider a.active:hover {
+  color: #147582 !important;
+  text-decoration: none !important;
+  font-family: "Averta-ExtraBold", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+snt-faq-filter-slider a.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: #147582;
+}
+snt-faq-filter-slider ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+snt-faq-filter-slider li:first-child {
+  margin-left: 30px;
+}
+snt-faq-filter-slider li:last-child {
+  margin-right: 30px;
+}
+snt-faq-filter-slider snt-layout[viewport=small] .spacings {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+snt-faq-filter-slider snt-layout[viewport=medium] .right-gradient {
+  width: 100px;
+}
+snt-faq-filter-slider snt-layout[viewport=medium] .left-gradient {
+  width: 100px;
+}
+snt-faq-filter-slider snt-layout[viewport=medium] li:first-child {
+  margin-left: 75px;
+}
+snt-faq-filter-slider snt-layout[viewport=medium] li:last-child {
+  margin-right: 75px;
+}
+snt-faq-filter-slider.hide-desktop snt-layout[viewport=large] .wrapper {
+  display: none;
+}
+snt-faq-filter-slider.hide-desktop snt-layout[viewport=extra-large] .wrapper {
+  display: none;
+}
+snt-faq-filter-slider .hide {
+  display: none;
+}

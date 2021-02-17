@@ -1,0 +1,37 @@
+export declare class GlobalSearch {
+    private static instance;
+    private static readonly searchUrlParam;
+    private keywords;
+    private filter;
+    private category;
+    private pageNum;
+    private totalCount;
+    private totalBlogCount;
+    private static readonly filterUrlParam;
+    private static readonly categoryUrlParam;
+    private static readonly pageUrlParam;
+    private static readonly defaultFilter;
+    private static readonly defaultCategory;
+    constructor();
+    static getInstance(): GlobalSearch;
+    initiate(): Promise<void>;
+    initiateSliderListener(): Promise<void>;
+    initiatePageChangedListener(): Promise<void>;
+    initiateTreeViewListener(): Promise<void>;
+    initiateUrlListener(): void;
+    initiateSearchComboboxListener(): void;
+    handlePageChange(updateResultsCount?: boolean): Promise<void>;
+    private scrollToTop;
+    private focusFirstResult;
+    private setPaginationPageNum;
+    private setPaginationTotalPages;
+    private updateFilterSlider;
+    private setResultsTitle;
+    private setResultsCount;
+    private togglePagination;
+    private setKeywordsInSearchBox;
+    private toggleLeftRail;
+    private populateFilterItems;
+    private showSearch;
+    private showResults;
+}

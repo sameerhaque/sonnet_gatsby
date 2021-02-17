@@ -1,0 +1,83 @@
+.sliderSelector {
+  position: relative;
+  display: inline-block;
+  background: #f8f8f8;
+  border: 1px solid #767676;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 100;
+  width: auto;
+  display: table;
+}
+
+.sliderSelector .toggle-button {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  z-index: 300;
+}
+
+.sliderSelector .toggle-button button, .sliderSelector .toggle-button button:focus, .sliderSelector .toggle-button button::-moz-focus-inner {
+  outline: none;
+  border: none;
+}
+
+.sliderSelector .toggle-button .button-wrapper {
+  display: table-cell;
+  /*padding:0 10px 0 10px*/
+}
+
+.sliderSelector .toggle-button .button-wrapper button {
+  height: 45px;
+  line-height: 45px;
+  padding: 0px 25px;
+  font-size: 1.2rem;
+  box-shadow: none;
+  background: 0 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sliderSelector .toggle-button .button-wrapper button:focus {
+  text-decoration: underline;
+  border: 1px solid transparent;
+}
+
+.sliderSelector .toggle-button .button-wrapper button.active {
+  color: #414141;
+  text-decoration: underline;
+}
+
+.sliderSelector .toggle-button.three-options .btn {
+  font-size: 14px;
+}
+
+.sliderSelector .active-indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 2px solid #414141;
+  border-radius: 30px;
+  background: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
+  z-index: 200;
+}
+
+.sliderSelector .toggle-button .button-wrapper:first-child:nth-last-child(n+3) ~ * {
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .sliderSelector {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .sliderSelector .toggle-button .button-wrapper button {
+    font-size: 0.9rem;
+  }
+}

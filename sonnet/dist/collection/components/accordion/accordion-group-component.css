@@ -1,0 +1,8 @@
+.white-fill snt-accordion-group, snt-accordion-group.white-fill {
+  display: block;
+  background-color: #ffffff;
+}
+.neutral-fill snt-accordion-group, snt-accordion-group.neutral-fill {
+  display: block;
+  background-color: #f8f8f8;
+}

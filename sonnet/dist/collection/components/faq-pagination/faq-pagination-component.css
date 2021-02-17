@@ -1,0 +1,173 @@
+snt-pagination .pagination-container {
+  border-top: 1px #147582 solid;
+  padding-top: 15px;
+  max-width: 260px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 21px;
+  font-size: 12px;
+}
+snt-pagination .prev-link-wrapper {
+  padding-left: 4px;
+  display: inline-block;
+}
+snt-pagination .next-link-wrapper {
+  padding-right: 4px;
+  display: inline-block;
+}
+snt-pagination i.arrows {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3.5px;
+}
+snt-pagination .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+snt-pagination .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+snt-pagination .page-number-wrapper {
+  margin: 0px 10px;
+  display: inline-block;
+}
+snt-pagination .desktop-page-numbers {
+  display: none;
+}
+snt-pagination a {
+  text-decoration: none;
+  color: #323232;
+  line-height: 21px;
+  font-size: 12px;
+}
+snt-pagination a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #147582;
+}
+snt-pagination a:hover .prev-link {
+  text-decoration: underline;
+}
+snt-pagination a:hover .next-link {
+  text-decoration: underline;
+}
+snt-pagination a:hover .page-number-wrapper .page-number {
+  font-family: "Averta-ExtraBold";
+  font-weight: 500;
+  color: #147582;
+}
+snt-pagination a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #147582;
+}
+snt-pagination a:focus .prev-link {
+  outline: solid;
+  outline-width: 1px;
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+snt-pagination a:focus .next-link {
+  outline: solid;
+  outline-width: 1px;
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+snt-pagination a:focus .page-number-outline {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-offset: 3px;
+  outline-color: #147582;
+}
+snt-pagination a:focus .page-number-outline .page-number {
+  color: #147582;
+  font-family: "Averta-ExtraBold";
+  font-weight: 500;
+}
+snt-pagination a:focus:active .page-number-outline, snt-pagination a:focus:active.active .page-number-outline {
+  outline: none;
+}
+snt-pagination a:focus:active .page-number-outline .page-number, snt-pagination a:focus:active.active .page-number-outline .page-number {
+  color: #147582;
+  font-family: "Averta-ExtraBold";
+  font-weight: 500;
+}
+snt-pagination a.active .page-number {
+  color: #323232;
+  border-bottom: 2px #147582 solid;
+}
+snt-pagination a.hidden {
+  visibility: hidden;
+}
+snt-pagination snt-layout[viewport=medium] .pagination-container {
+  padding-top: 30px;
+  max-width: 694px;
+  line-height: 20px;
+  font-size: 14px;
+}
+snt-pagination snt-layout[viewport=medium] .page-number-wrapper {
+  margin: 0px 20px;
+}
+snt-pagination snt-layout[viewport=medium] .mobile-page-numbers {
+  display: none;
+}
+snt-pagination snt-layout[viewport=medium] .desktop-page-numbers {
+  display: block;
+}
+snt-pagination snt-layout[viewport=medium] a {
+  line-height: 20px;
+  font-size: 14px;
+}
+snt-pagination snt-layout[viewport=medium] i.arrows {
+  padding: 4.4px;
+}
+snt-pagination snt-layout[viewport=large] .pagination-container {
+  max-width: 654px;
+}
+snt-pagination snt-layout[viewport=extra-large] .pagination-container {
+  max-width: 800px;
+}
+snt-pagination snt-layout[viewport=large] .pagination-container {
+  padding-top: 30px;
+  line-height: 21px;
+  font-size: 16px;
+}
+snt-pagination snt-layout[viewport=large] .page-number-wrapper {
+  margin: 0px 10px;
+}
+snt-pagination snt-layout[viewport=large] .mobile-page-numbers {
+  display: none;
+}
+snt-pagination snt-layout[viewport=large] .desktop-page-numbers {
+  display: block;
+}
+snt-pagination snt-layout[viewport=large] a {
+  line-height: 21px;
+  font-size: 16px;
+}
+snt-pagination snt-layout[viewport=large] i.arrows {
+  padding: 4.4px;
+}
+snt-pagination snt-layout[viewport=extra-large] .pagination-container {
+  padding-top: 30px;
+  line-height: 21px;
+  font-size: 16px;
+}
+snt-pagination snt-layout[viewport=extra-large] .page-number-wrapper {
+  margin: 0px 10px;
+}
+snt-pagination snt-layout[viewport=extra-large] .mobile-page-numbers {
+  display: none;
+}
+snt-pagination snt-layout[viewport=extra-large] .desktop-page-numbers {
+  display: block;
+}
+snt-pagination snt-layout[viewport=extra-large] a {
+  line-height: 21px;
+  font-size: 16px;
+}
+snt-pagination snt-layout[viewport=extra-large] i.arrows {
+  padding: 4.4px;
+}

@@ -1,0 +1,58 @@
+.sonnet-form .form-control {
+    border: 1px solid #6f6f6f;
+    border-radius: 0;
+    color: #6f6f6f;
+    line-height: 26px;
+}
+
+.sonnet-form .form-control:hover {
+    box-shadow: none;
+    border: 1px solid #147582;
+}
+
+.sonnet-form .form-control:focus {
+    box-shadow: none;
+    border: 3px solid #147582;
+}
+.sonnet-form label {
+    font-family: "Averta-ExtraBold", sans-serif !important;
+    font-weight: 500 !important;
+    margin-bottom: 5px;
+}
+
+.sonnet-form .form-row {
+    margin-bottom: 26px;
+}
+
+.sonnet-form p {
+    margin-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+    .sonnet-form .form-row {
+        margin-bottom: 30px;
+    }
+
+    .sonnet-form p {
+        margin-bottom: 30px;
+    }
+}
+
+.sonnet-form .submit-button {
+    width: 100%;
+}
+
+.sonnet-form .submit-button button {
+    display: block;
+    margin: auto;
+}
+
+.sonnet-form .hidden {
+    display: none;
+}
+
+.sonnet-form .error-message {
+    font-family: "Averta-Regular", sans-serif !important;
+    margin-top: 5px;
+    color: #e12160;
+}

@@ -1,0 +1,15 @@
+snt-navbar-toggle .navbar-toggler {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+@media (min-width: 768px) {
+  snt-navbar-toggle .navbar-toggler {
+    font-size: 1.75rem;
+    margin-top: 2px;
+  }
+}
+snt-navbar-toggle .navbar-toggler snt-icon {
+  color: #ffffff;
+}

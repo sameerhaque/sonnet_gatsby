@@ -1,0 +1,108 @@
+snt-header {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 99;
+  background-color: #323232;
+}
+snt-header[fixed] {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 1023px) {
+  snt-header[active] .brand-and-toggle,
+snt-header[active] .actions-nav,
+snt-header[active] snt-pane {
+    display: none;
+  }
+  snt-header[active] header {
+    padding: 0;
+  }
+}
+snt-header header {
+  position: relative;
+  padding: 1.125rem 0;
+  margin: 0 auto;
+}
+snt-header snt-layout .spacings {
+  overflow: visible;
+}
+snt-header snt-nav[slot=secondary-nav-mobile] {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  snt-header snt-nav[slot=secondary-nav-mobile] {
+    display: none;
+  }
+}
+snt-header snt-nav[slot=secondary-nav-mobile] snt-nav-item {
+  margin: 0 0 0.625rem 0;
+}
+snt-header snt-nav[slot=secondary-nav-desktop] {
+  display: none;
+}
+@media (min-width: 768px) {
+  snt-header snt-nav[slot=secondary-nav-desktop] {
+    display: flex;
+  }
+}
+snt-header snt-nav[slot=secondary-nav-desktop] snt-nav-item {
+  margin: 0 0 0.625rem 0;
+}
+@media (min-width: 768px) {
+  snt-header snt-nav[slot=secondary-nav-desktop] snt-nav-item {
+    margin: 0 0 0 1.65rem;
+  }
+}
+snt-header snt-navbar-collapse {
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 768px) {
+  snt-header snt-navbar-collapse {
+    overflow: visible;
+  }
+}
+snt-header snt-navbar-collapse {
+  order: 1;
+}
+@media (min-width: 768px) {
+  snt-header snt-navbar-collapse {
+    order: initial;
+  }
+}
+snt-header snt-navbar {
+  display: flex;
+  flex-flow: row nowrap;
+}
+snt-header snt-button {
+  white-space: nowrap;
+}
+snt-header snt-button button {
+  background: transparent;
+  border: none;
+  color: white;
+}
+snt-header snt-link a {
+  background-image: none;
+  color: #ffffff;
+}
+snt-header snt-link a:hover, snt-header snt-link a:focus {
+  background-image: none;
+}
+snt-header snt-skip-to-main a {
+  font-family: Averta-ExtraBold;
+  color: #6ebac5;
+  text-decoration: none;
+}
+snt-header snt-skip-to-main a:focus {
+  outline: 0.125rem solid #b2b2b2;
+  outline-offset: 0px;
+}
+snt-header .header-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}

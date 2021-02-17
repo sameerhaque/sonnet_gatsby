@@ -1,0 +1,168 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.faq-breadcrumb {
+    display: none;
+}
+
+.faq-search-combobox snt-search-combobox snt-layout .spacings {
+    padding: 40px 30px;
+}
+
+.faq-results snt-search-result-list .search-result-list-wrapper snt-layout .spacings {
+    padding: 40px 30px 26px;
+    box-sizing: border-box;
+}
+
+.category-tree-title snt-title snt-layout .spacings {
+    display: none;
+}
+
+.faq-results-title snt-title snt-layout .spacings {
+    padding: 0px 30px 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.faq-category-treeview {
+    display: none;
+    box-sizing: border-box;
+    border-right: 1px solid #e5e5e5;
+}
+
+.faq-results snt-pagination snt-layout .spacings {
+    padding: 0px 30px 40px;
+}
+
+.faq-results snt-pagination snt-layout .spacings .pagination-container {
+    max-width: 100%;
+}
+
+.faq-results snt-faq-filter-slider snt-layout .spacings {
+    padding: 0px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
+    box-shadow: 0.2px 0.2px 10px #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .faq-search-combobox snt-search-combobox snt-layout .spacings {
+        padding: 40px 37px;
+    }
+
+    .faq-results snt-search-result-list .search-result-list-wrapper snt-layout .spacings {
+        padding: 40px 37px 26px 37px;
+    }
+
+    .faq-results snt-pagination snt-layout .spacings {
+        padding: 0px 37px 39px;
+    }
+
+    .faq-results snt-faq-filter-slider snt-layout .spacings {
+        margin: 24px 37px 0px;
+    }
+
+    .faq-results-title snt-title snt-layout .spacings {
+        padding: 0px 37px 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq-breadcrumb {
+        display: inline-block;
+    }
+    .faq-breadcrumb snt-breadcrumb snt-layout .spacings {
+        padding: 70px 0px 75px 31px;
+    }
+
+    .faq-search-combobox snt-search-combobox snt-layout .spacings {
+        padding: 60px 71px 60px 0px;
+        float: right;
+    }
+    .faq-search-combobox snt-search-combobox .search-container {
+        width: 370px;
+    }
+
+    .category-tree-title snt-title snt-layout .spacings {
+        display: inline-block;
+        padding: 0px 0px 35px 0px;
+    }
+
+    .category-tree-title snt-title h4 {
+        line-height: 0.8rem;
+    }
+
+    .faq-results-title snt-title snt-layout .spacings {
+        padding: 0px 71px 60px 29px;
+    }
+
+    .faq-results-title snt-title h1 {
+        line-height: 1.8rem;
+    }
+
+    .faq-category-treeview {
+        display: inline-block;
+        padding: 0px 0px 0px 71px;
+    }
+
+    .faq-results snt-search-result-list .search-result-list-wrapper snt-layout .spacings {
+        padding: 0px 71px 30px 29px;
+    }
+
+    .faq-results snt-pagination snt-layout .spacings {
+        padding: 0px 71px 60px 29px;
+    }
+
+    snt-faq-filter-slider snt-layout .spacings {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .faq-breadcrumb snt-breadcrumb snt-layout .spacings {
+        padding: 70px 0px 78px 95px;
+    }
+
+    .faq-search-combobox snt-search-combobox snt-layout .spacings {
+        padding: 60px 135px 60px 0px;
+    }
+
+    .category-tree-title snt-title snt-layout .spacings {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .category-tree-title snt-title h4 {
+        line-height: 0.95rem;
+    }
+
+    .faq-results-title snt-title snt-layout .spacings {
+        padding: 0px 135px 60px 99px;
+    }
+
+    .faq-results-title snt-title h1 {
+        line-height: 2.4rem;
+    }
+
+    .faq-category-treeview {
+        padding: 0px 0px 0px 135px;
+    }
+
+    .faq-results snt-search-result-list .search-result-list-wrapper snt-layout .spacings {
+        padding: 0px 135px 30px 99px;
+    }
+
+    .faq-results snt-pagination snt-layout .spacings {
+        padding: 0px 135px 60px 99px;
+    }
+}
+
+.faq-results:not(.no-results)
+    > *:not(snt-title):not(snt-pagination):not(snt-faq-filter-slider):not(snt-search-result-list) {
+    display: none;
+}
+.faq-results.no-results snt-title,
+.faq-results.no-results snt-pagination,
+.faq-results.no-results snt-faq-filter-slider,
+.faq-results.no-results snt-search-result-list {
+    display: none;
+}

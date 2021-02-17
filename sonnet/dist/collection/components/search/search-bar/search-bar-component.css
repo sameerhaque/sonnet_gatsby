@@ -1,0 +1,25 @@
+snt-search-bar {
+  display: none;
+}
+snt-search-bar snt-pane {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #323232;
+  border-top: 1px solid #fcfcfc;
+  padding: 0.625rem 0;
+  display: none;
+}
+snt-search-bar[active] {
+  display: block;
+}
+snt-search-bar[active] snt-backdrop {
+  display: block;
+}
+snt-search-bar snt-search-typeahead {
+  margin: 0 0.75rem;
+}
+snt-search-bar snt-search-typeahead + * snt-icon {
+  font-size: 0.875rem;
+}

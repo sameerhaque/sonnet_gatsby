@@ -1,0 +1,10 @@
+snt-blog-results snt-multi-column-mixed snt-image img {
+  position: unset;
+  top: unset;
+}
+snt-blog-results snt-multi-column-mixed.first-row .column.last-row {
+  margin-bottom: 20px;
+}
+snt-blog-results snt-multi-column-mixed.result-rows .spacings {
+  padding-top: 10px;
+}

@@ -1,0 +1,48 @@
+snt-navbar {
+  width: 100%;
+}
+snt-navbar.navbar {
+  margin: 0;
+  padding: 0;
+  /* TODO: Replace this with a more sophisticated solution */
+}
+@media (min-width: 768px) {
+  snt-navbar.navbar.navbar-expand-md .nav-link, snt-navbar.navbar.navbar-expand-lg .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1023px) {
+  snt-navbar[active] snt-backdrop {
+    display: block;
+  }
+}
+snt-navbar snt-backdrop {
+  display: none;
+}
+snt-navbar .actions-nav,
+snt-navbar .brand-and-toggle {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+@media (min-width: 1024px) {
+  snt-navbar .actions-nav,
+snt-navbar .brand-and-toggle {
+    flex-flow: column nowrap;
+  }
+}
+snt-navbar .brand-and-toggle > *:not(:last-child) {
+  margin-right: 1.25rem;
+}
+snt-navbar .actions-nav > *:not(:first-child) {
+  margin-left: 1.25rem;
+}
+@media (min-width: 1024px) {
+  snt-navbar .actions-nav > *:not(:first-child) {
+    margin-left: 1.625rem;
+  }
+}
+snt-navbar .main-panel.hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,83 @@
+snt-alert {
+  display: block;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
+  border: 0 !important;
+}
+snt-alert.alert-grey {
+  background-color: #F8F8F8;
+}
+snt-alert.alert-primary {
+  background-color: #147582;
+}
+@media (min-width: 1440px) {
+  snt-alert .alert-container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+snt-alert.alert-primary p2 {
+  color: #ffffff !important;
+  display: block;
+}
+@media (min-width: 1440px) {
+  snt-alert.alert-primary p2 {
+    max-width: 95%;
+  }
+}
+@media (max-width: 480px) {
+  snt-alert.alert-primary p2 {
+    max-width: 85%;
+  }
+}
+snt-alert.alert-primary p2 a {
+  color: #ffffff;
+}
+
+.alert-dismissible .close {
+  position: relative !important;
+  padding: 0 !important;
+  opacity: 1;
+  top: 4px !important;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+
+.close:hover {
+  opacity: 0.8;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 20px;
+  content: " ";
+  height: 20px;
+  width: 1.5px;
+}
+
+.alert-grey .close:before, .alert-grey .close:after {
+  background-color: #147582;
+}
+
+.alert-primary .close:before, .alert-primary .close:after {
+  background-color: #F8F8F8;
+}
+
+.close:before {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.close:after {
+  transform: rotate(-45deg);
+  top: 0px;
+}
